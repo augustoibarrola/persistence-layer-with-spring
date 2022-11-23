@@ -1,0 +1,5 @@
+package com.geryon.dto;
+
+public class CustomerDTO {
+
+}

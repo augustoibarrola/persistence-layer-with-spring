@@ -1,0 +1,5 @@
+package com.geryon.service;
+
+public interface CustomerService {
+
+}

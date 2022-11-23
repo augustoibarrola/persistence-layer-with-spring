@@ -1,0 +1,29 @@
+package com.geryon.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.geryon.dto.CustomerDTO;
+import com.geryon.exception.GeryonBankException;
+import com.geryon.repository.CustomerRepository;
+
+@Service(value = "customerService")
+public class CustomerServiceImpl implements CustomerService {
+
+	@Autowired
+	private CustomerRepository customerRepository;
+	
+	@Override
+	public CustomerDTO getCustomer(Integer customerId) throws GeryonBankException {
+
+		
+		CustomerDTO customerDTO = customerRepository.getCustomer(customerId);
+		
+		if(customerDTO == null) {
+			throw new GeryonBankException("Service.CUSTOMER_UNAVAILABLE");
+		}
+		
+		return customerDTO;
+	}
+
+}

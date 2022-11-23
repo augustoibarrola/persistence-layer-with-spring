@@ -1,0 +1,5 @@
+package com.geryon.repository;
+
+public class CustomerRepository {
+
+}

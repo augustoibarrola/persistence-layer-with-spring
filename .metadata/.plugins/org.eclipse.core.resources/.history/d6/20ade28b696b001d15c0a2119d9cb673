@@ -1,0 +1,13 @@
+package com.geryon;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoSpringOrmReadApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoSpringOrmReadApplication.class, args);
+	}
+
+}

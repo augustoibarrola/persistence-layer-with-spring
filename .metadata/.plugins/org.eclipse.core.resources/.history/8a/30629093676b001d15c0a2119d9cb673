@@ -1,0 +1,13 @@
+package com.geryon.dto;
+
+import java.time.LocalDate;
+
+public class CustomerDTO {
+	
+	private Integer customerId;
+	private String emailId;
+	private String name;
+	private LocalDate dateOfBirth;
+	private CustomerType customerType;
+
+}

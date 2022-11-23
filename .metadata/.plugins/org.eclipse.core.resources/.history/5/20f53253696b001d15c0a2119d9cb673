@@ -1,0 +1,13 @@
+package com.geryon.repository;
+
+import com.geryon.dto.CustomerDTO;
+
+public class CustomerRepositoryImpl implements CustomerRepository {
+
+	@Override
+	public CustomerDTO getCustomer(Integer customerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
