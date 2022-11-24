@@ -33,9 +33,9 @@ public class DemoSpringOrmUpdateApplication implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception {
-		getCustomer(); //cRud
+//		getCustomer(); //cRud
 		//addCustomer(); //Crud
-//		updateCustomer(); //Crud
+//		updateCustomer(); //crUd
 	}
 
 	public void getCustomer() throws GeryonBankException {
