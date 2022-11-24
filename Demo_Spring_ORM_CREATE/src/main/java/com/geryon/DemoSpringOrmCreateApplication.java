@@ -33,8 +33,8 @@ public class DemoSpringOrmCreateApplication implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception {
-		//getCustomer();
-		addCustomer();
+		//getCustomer(); //cRud
+		addCustomer(); //Crud
 	}
 	
 	public void getCustomer() throws GeryonBankException {
@@ -56,10 +56,10 @@ public class DemoSpringOrmCreateApplication implements CommandLineRunner{
 		
 		CustomerDTO customerDTO = new CustomerDTO();
 		
-		customerDTO.setCustomerId(2);
-		customerDTO.setEmailId("anastasia@geryon.com");
-		customerDTO.setName("Anastasia");
-		customerDTO.setDateOfBirth(LocalDate.of(2019, 11, 4));
+		customerDTO.setCustomerId(3);
+		customerDTO.setEmailId("ricardo@geryon.com");
+		customerDTO.setName("Ricardo");
+		customerDTO.setDateOfBirth(LocalDate.of(1994, 11, 4));
 		customerDTO.setCustomerType(CustomerType.GOLD);
 		
 		try {
